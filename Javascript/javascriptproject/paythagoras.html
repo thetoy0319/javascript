@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaydeep</title>
+</head>
+<body>
+    
+    value A:<input type="text" id="valuea"><br><br>
+    value B:<input type="text" id="valueb"><br><br>
+    <input type="submit" onclick="math()">
+
+    <h1 id="ans"></h1>
+
+    <script>
+
+        function math() {
+
+            var a = parseInt(document.getElementById('valuea').value);
+            var b = parseInt(document.getElementById('valueb').value);
+
+            var c = a^2+b^2;
+
+            document.getElementById('ans').innerHTML = c^2;
+        }
+        
+
+    </script>
+
+</body>
+</html>
